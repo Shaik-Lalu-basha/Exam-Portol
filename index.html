@@ -1041,8 +1041,7 @@
             
             <button class="start-exam-btn" onclick="startExam()">
                 🚀 START EXAMINATION
-            </button>
-            <br><br>
+            </button><br><br>
             <div style="margin-bottom: 5px;">
     Developed by <strong>Shaik Lalu Basha</strong> | 📞 <a href="tel:+919876543210" style="color: #60a5fa; text-decoration: none;">+91 7993417685</a>
   </div>
@@ -1050,6 +1049,7 @@
     🔋 Powered by <strong style="color: #34d399;">ESCORT TECH HUB</strong>
   </div>
         </div>
+        
     </div>
 <!-- Add this after the violation modal div (around line 280) -->
 <audio id="violationSound" preload="auto">
@@ -1269,7 +1269,7 @@
             <div class="violation-reason" id="violationReason" style="display: none;"></div>
             <button class="close-btn" onclick="closeScoreCard()">Close</button>
             <button class="round2-btn" id="round2Btn" onclick="proceedToRound2()" style="display: none;">
-                🚀 Proceed to Round 2
+                🚀 Succesfully Completed your Quiz
             </button>
         </div>
     </div>
@@ -1288,77 +1288,90 @@
             {
                 name: "Aptitude",
                 questions: [
-                    { question: "If a train travels 240 km in 3 hours, what is its speed in km/hr?", options: ["60", "70", "80", "90"], correct: 2 },
-                    { question: "What is 25% of 80?", options: ["15", "20", "25", "30"], correct: 1 },
-                    { question: "If x + 5 = 12, what is the value of x?", options: ["5", "6", "7", "8"], correct: 2 },
-                    { question: "What is the area of a rectangle with length 8m and width 6m?", options: ["48 sq m", "42 sq m", "36 sq m", "54 sq m"], correct: 0 },
-                    { question: "If 3x = 21, what is x?", options: ["6", "7", "8", "9"], correct: 1 },
-                    { question: "What is the next number in the series: 2, 4, 8, 16, ?", options: ["24", "28", "32", "36"], correct: 2 },
-                    { question: "If a book costs $15 and is sold at 20% profit, what is the selling price?", options: ["$16", "$17", "$18", "$19"], correct: 2 },
-                    { question: "What is the square root of 144?", options: ["10", "11", "12", "13"], correct: 2 },
-                    { question: "If 2/3 of a number is 24, what is the number?", options: ["32", "36", "40", "42"], correct: 1 },
-                    { question: "What is 15% of 200?", options: ["25", "30", "35", "40"], correct: 1 },
-                    { question: "If a car travels 150 km in 2.5 hours, what is its average speed?", options: ["50 km/hr", "55 km/hr", "60 km/hr", "65 km/hr"], correct: 2 },
-                    { question: "What is the perimeter of a square with side 7 cm?", options: ["21 cm", "28 cm", "35 cm", "49 cm"], correct: 1 },
-                    { question: "If 4x - 3 = 17, what is x?", options: ["4", "5", "6", "7"], correct: 1 },
-                    { question: "What is 12 × 8?", options: ["84", "88", "92", "96"], correct: 3 },
-                    { question: "If a triangle has angles 60°, 60°, what is the third angle?", options: ["50°", "55°", "60°", "65°"], correct: 2 },
-                    { question: "What is 144 ÷ 12?", options: ["10", "11", "12", "13"], correct: 2 },
-                    { question: "If the ratio of boys to girls is 3:2 and there are 15 boys, how many girls are there?", options: ["8", "9", "10", "12"], correct: 2 },
-                    { question: "What is the compound interest on $1000 at 10% per annum for 2 years?", options: ["$200", "$210", "$220", "$230"], correct: 1 },
-                    { question: "If 5 workers can complete a job in 8 days, how many days will 10 workers take?", options: ["3", "4", "5", "6"], correct: 1 },
-                    { question: "What is the value of 2³ + 3²?", options: ["15", "16", "17", "18"], correct: 2 }
-                ]
+    { question: "The probability of getting a sum of 8 when two dice are thrown is:", options: ["5/36", "6/36", "4/36", "1/6"], correct: 0 },
+    { question: "A can do a work in 20 days and B in 30 days. They work together for 6 days, then A leaves. B will finish the remaining work in:", options: ["6 days", "8 days", "10 days", "12 days"], correct: 1 },
+    { question: "If 5x – 3y = 10 and 3x – 5y = –2, then x + y = ?", options: ["2", "3", "4", "5"], correct: 2 },
+    { question: "A train passes a platform 200 m long in 25 seconds at a speed of:", options: ["20 km/h", "28.8 km/h", "36 km/h", "40 km/h"], correct: 3 },
+    { question: "The probability of drawing 2 aces from a pack of 52 cards is:", options: ["1/221", "1/26", "1/13", "1/52"], correct: 0 },
+    { question: "A sum of ₹10,000 amounts to ₹12,100 in 2 years at compound interest. The rate of interest per annum is:", options: ["5%", "10%", "12%", "8%"], correct: 1 },
+    { question: "The compound interest on ₹8000 at 12.5% p.a. for 2 years is:", options: ["₹2000", "₹2100", "₹2125", "₹2200"], correct: 2 },
+    { question: "If 3x – 2y = 12 and 2x – 3y = –6, then x + y = ?", options: ["1", "2", "3", "4"], correct: 3 },
+    { question: "A cylinder has radius 7 cm and height 14 cm. Its volume is:", options: ["2156 cm³", "3080 cm³", "4312 cm³", "6160 cm³"], correct: 0 },
+    { question: "A bag contains 4 red, 5 green, and 6 blue balls. The probability of drawing a green ball is:", options: ["1/3", "5/15", "1/2", "5/12"], correct: 1 },
+    { question: "If a sum triples itself in 10 years at simple interest, the rate of interest per annum is:", options: ["10%", "15%", "20%", "25%"], correct: 2 },
+    { question: "If the cost price is 80% of the selling price, then the profit percentage is:", options: ["20%", "10%", "30%", "25%"], correct: 3 },
+    { question: "The difference between compound interest and simple interest on ₹5000 at 10% p.a. for 2 years is:", options: ["₹50", "₹100", "₹150", "₹200"], correct: 0 },
+    
+
+    { question: "If 15 men can complete a work in 20 days, how many men are required to complete it in 10 days?", options: ["20", "25", "30", "35"], correct: 2 },
+    { question: "A sum amounts to ₹672 in 3 years and ₹792 in 5 years at simple interest. The principal is:", options: ["₹500", "₹540", "₹600", "₹650"], correct: 1 },
+    { question: "The compound interest on ₹4000 at 5% p.a. for 3 years is:", options: ["₹600", "₹615.25", "₹630.50", "₹650"], correct: 1 },
+    { question: "If a person walks at 5 km/h, he is late by 15 minutes, but if he walks at 6 km/h, he is early by 15 minutes. The distance to be covered is:", options: ["5 km", "6 km", "7.5 km", "8 km"], correct: 2 },
+    { question: "The value of (256)^(3/4) is:", options: ["64", "32", "16", "8"], correct: 1 },
+    { question: "A shopkeeper gains 25% after giving a discount of 20% on the marked price. The marked price is ₹600. The cost price is:", options: ["₹400", "₹450", "₹480", "₹500"], correct: 3 },
+    { question: "The average weight of 40 students is 50 kg. If one student weighing 60 kg is replaced by another weighing 45 kg, the new average is:", options: ["49.5 kg", "49.75 kg", "50 kg", "50.25 kg"], correct: 0 },
+    
+]
+
             },
             {
                 name: "Logical Thinking",
                 questions: [
-                    { question: "If all roses are flowers and some flowers are red, which is definitely true?", options: ["All roses are red", "Some roses are red", "All flowers are roses", "Some roses may be red"], correct: 3 },
-                    { question: "What comes next in the pattern: A, C, F, J, ?", options: ["M", "N", "O", "P"], correct: 2 },
-                    { question: "If CODING is written as DPEJOH, how is LOGIC written?", options: ["MPHJD", "MPHID", "MPHJE", "MPGID"], correct: 0 },
-                    { question: "Five friends A, B, C, D, E are sitting in a row. A is to the left of B, C is to the right of D, E is between A and C. Who is in the middle?", options: ["A", "B", "C", "E"], correct: 3 },
-                    { question: "If Monday is the 1st, what day is the 15th?", options: ["Monday", "Tuesday", "Wednesday", "Thursday"], correct: 0 },
-                    { question: "In a certain code, CAT = 24, DOG = 26. What is the code for BIRD?", options: ["34", "35", "36", "37"], correct: 2 },
-                    { question: "Which number doesn't belong: 2, 3, 6, 7, 8, 14, 15, 30?", options: ["2", "6", "8", "30"], correct: 2 },
-                    { question: "If you rearrange the letters 'CIFAIPC', you get the name of a:", options: ["Ocean", "Country", "City", "Animal"], correct: 0 },
-                    { question: "What is the missing number: 1, 4, 9, 16, ?, 36", options: ["20", "24", "25", "30"], correct: 2 },
-                    { question: "If all cats have tails and Fluffy is a cat, what can we conclude?", options: ["Fluffy has a tail", "Fluffy is black", "Fluffy likes milk", "Fluffy is big"], correct: 0 },
-                    { question: "Which word is the odd one out: TRIANGLE, SQUARE, CIRCLE, RECTANGLE?", options: ["TRIANGLE", "SQUARE", "CIRCLE", "RECTANGLE"], correct: 2 },
-                    { question: "If 2 = 6, 3 = 12, 4 = 20, then 5 = ?", options: ["25", "30", "35", "40"], correct: 1 },
-                    { question: "What comes next: 1, 1, 2, 3, 5, 8, ?", options: ["11", "12", "13", "15"], correct: 2 },
-                    { question: "If EARTH is coded as 51234, how is HEART coded?", options: ["35142", "35124", "25134", "45132"], correct: 0 },
-                    { question: "A clock shows 3:15. What is the angle between the hour and minute hands?", options: ["0°", "7.5°", "15°", "22.5°"], correct: 1 },
-                    { question: "Which number should replace the question mark: 2, 6, 18, 54, ?", options: ["108", "162", "216", "324"], correct: 1 },
-                    { question: "If WATER is to THIRSTY as FOOD is to:", options: ["HUNGRY", "FULL", "TASTE", "EAT"], correct: 0 },
-                    { question: "What is the next letter in the series: A, D, G, J, ?", options: ["K", "L", "M", "N"], correct: 2 },
-                    { question: "If today is Wednesday, what day will it be after 100 days?", options: ["Monday", "Tuesday", "Wednesday", "Friday"], correct: 3 },
-                    { question: "Which number is different from others: 121, 144, 169, 196, 225?", options: ["121", "144", "169", "196"], correct: 1 }
-                ]
+    { question: "If every second person is selected from a line of 30 starting at 1, how many are selected?", options: ["15", "14", "16", "30"], correct: 0 },   
+    { question: "2, 3, 5, 9, 17, ?", options: ["31", "33", "34", "35"], correct: 1 },             
+    { question: "Seven friends A–G sit around a circle. A sits opposite D. B is immediate right of A. C is second left of D. Who sits between B and C?", options: ["E", "F", "G", "Cannot say"], correct: 2 },
+    { question: "Two coins tossed and one die rolled. Probability of getting two heads and a 4?", options: ["1/12", "1/8", "1/6", "1/24"], correct: 3 },
+    { question: "From a 52-card deck, probability of drawing two red cards without replacement?", options: ["25/102", "25/51", "1/4", "13/51"], correct: 0 },
+    { question: "How many 4-letter words can be formed with letters A,B,C,D if letters can repeat?", options: ["164", "256", "281", "24"], correct: 1 },
+    { question: "Statements: Some A are B. All B are C. All C are D. Conclusions: (I) Some D are A. (II) Some A are D.", options: ["Only I true", "Only II true", "Both true", "Neither"], correct: 2 },
+    { question: "Statement: 'Only if it rains, the match will be canceled.' Which is equivalent?", options: ["If match canceled → it rained", "If not rain → match not canceled", "If rain → match canceled", "Both A & B"], correct: 3 },
+    { question: "We have 4 weights; using scale we find relations: A>B, C>D, B>C. Which is heaviest?", options: ["A", "B", "C", "D"], correct: 0 },
+    { question: "If x ≡ 2 (mod 3) and x ≡ 3 (mod 4), smallest positive x = ?", options: ["14", "11", "23", "7"], correct: 1 },
+    { question: "Three students — Raj, Tina, and Uma — studied Math, Physics, Chemistry in different order. Raj did not study Physics; Tina studied after Raj. Who studied Chemistry?", options: ["Raj", "Tina", "Uma", "Cannot determine"], correct: 2 },
+    
+    
+    { question: "A man has 3 sacks of apples. If he removes 2 apples from first and adds to second, then removes 2 from second and adds to third, each sack ends with 10 apples. How many apples initially in each?", options: [ "8, 12, 10", "10, 8, 12", "14, 8, 6","12, 10, 8"], correct: 3 },
+    { question: "If P→Q is true, which is necessarily true?", options: ["¬Q→¬P", "Q→P", "P→¬Q", "¬P→¬Q"], correct: 0 },
+    { question: "From a 52-card deck, probability of drawing two red cards without replacement?", options: ["25/102", "25/51", "1/4", "13/51"], correct: 0 },
+    
+    
+    
+    { question: "Four suspects A,B,C,D; A says B did it. B says C did it. C says D did it. D says B lying. Exactly one tells truth. Who did it?", options: ["A", "B", "C", "D"], correct: 2 },
+    { question: "Five books on shelf: Math, Physics, Chem, Eng, Bio. Math left of Physics; Chem not at ends; Eng rightmost. Which is 3rd?", options: ["Math", "Physics", "Chem", "Bio"], correct: 2 },
+    { question: "1, 2, 6, 24, 120, ?", options: ["720", "600", "7200", "1440"], correct: 0 },
+    { question: "A farmer needs to transport wolf, goat, cabbage. If he takes goat first, then returns alone, then takes wolf, brings goat back, takes cabbage, returns alone, then takes goat — will he succeed?", options: ["Yes", "No", "Sometimes", "Depends on order"], correct: 0 },
+    
+    { question: "All successful people are hard-working. Some creative people are successful. Which follows?", options: ["Some creative people are hard-working", "All creative people are hard-working", "No creative people are hard-working", "None"], correct: 0 },
+    { question: "Fill the missing: Row1: 2 7 14, Row2: 3 8 ?", options: ["24", "18", "20", "22"], correct: 0 },
+    { question: "If P and Q cannot both be true, and P is false, what can be inferred about Q?", options: ["Q is true", "Q is false", "Q may be true or false", "Q is equivalent to P"], correct: 2 }
+]
+
             },
             {
                 name: "General Knowledge",
                 questions: [
-                    { question: "Who is known as the 'Father of the Nation' in India?", options: ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Sardar Patel"], correct: 1 },
-                    { question: "What is the capital of Australia?", options: ["Sydney", "Melbourne", "Canberra", "Perth"], correct: 2 },
-                    { question: "Which planet is known as the Red Planet?", options: ["Venus", "Mars", "Jupiter", "Saturn"], correct: 1 },
-                    { question: "Who wrote the novel 'Pride and Prejudice'?", options: ["Charlotte Bronte", "Emily Bronte", "Jane Austen", "Virginia Woolf"], correct: 2 },
-                    { question: "What is the largest ocean on Earth?", options: ["Atlantic", "Indian", "Arctic", "Pacific"], correct: 3 },
-                    { question: "In which year did World War II end?", options: ["1944", "1945", "1946", "1947"], correct: 1 },
-                    { question: "What is the chemical symbol for gold?", options: ["Go", "Gd", "Au", "Ag"], correct: 2 },
-                    { question: "Which country has the most natural lakes?", options: ["Finland", "Canada", "Russia", "Sweden"], correct: 1 },
-                    { question: "Who painted the Mona Lisa?", options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"], correct: 2 },
-                    { question: "What is the smallest country in the world?", options: ["Monaco", "San Marino", "Vatican City", "Liechtenstein"], correct: 2 },
-                    { question: "Which is the longest river in the world?", options: ["Amazon", "Nile", "Yangtze", "Mississippi"], correct: 1 },
-                    { question: "What is the hardest natural substance on Earth?", options: ["Gold", "Iron", "Diamond", "Platinum"], correct: 2 },
-                    { question: "Who invented the telephone?", options: ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Benjamin Franklin"], correct: 1 },
-                    { question: "Which gas makes up most of Earth's atmosphere?", options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"], correct: 2 },
-                    { question: "What is the currency of Japan?", options: ["Yuan", "Won", "Yen", "Ringgit"], correct: 2 },
-                    { question: "Which mountain range contains Mount Everest?", options: ["Andes", "Rockies", "Himalayas", "Alps"], correct: 2 },
-                    { question: "Who was the first person to walk on the moon?", options: ["Buzz Aldrin", "Neil Armstrong", "John Glenn", "Alan Shepard"], correct: 1 },
-                    { question: "What is the largest mammal in the world?", options: ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"], correct: 1 },
-                    { question: "Which element has the chemical symbol 'Fe'?", options: ["Fluorine", "Iron", "Francium", "Fermium"], correct: 1 },
-                    { question: "What is the most spoken language in the world?", options: ["English", "Spanish", "Mandarin Chinese", "Hindi"], correct: 0 }
-                ]
+    { question: "Which country launched the “Artemis” lunar mission?", options: ["USA (NASA)", "China", "Russia", "Japan"], correct: 0 },
+    { question: "Who was the first woman to win the Nobel Prize in Economics?", options: ["Elinor Ostrom", "Esther Duflo", "Amartya Sen", "Claudia Goldin"], correct: 0 },
+    { question: "The Bretton Woods Conference (1944) led to the creation of:", options: ["IMF & World Bank", "NATO", "WHO & UNESCO", "WTO & UNHCR"], correct: 0 },
+    { question: "The “Blue Moon” phenomenon refers to:", options: ["Moon turning blue due to dust", "Second full moon in a month", "Moon during eclipse", "Reflection from oceans"], correct: 1 },
+    { question: "What is the currency of Egypt?", options: ["Pound", "Dinar", "Dirham", "Rial"], correct: 0 },
+    { question: "Who is the first Indian woman to go to space?", options: ["Kalpana Chawla", "Sunita Williams", "Ritu Karidhal", "Tessy Thomas"], correct: 0 },
+    { question: "The “Five Eyes” alliance is related to:", options: ["Space exploration", "Intelligence sharing", "Climate monitoring", "Marine protection"], correct: 1 },
+    { question: "Which country has the largest proven natural gas reserves?", options: ["Qatar", "Russia", "Iran", "Saudi Arabia"], correct: 2 },
+    { question: "The Schengen Area is a group of European countries that:", options: ["Share a single currency", "Allow free movement without passports", "Have common military defense", "Share a parliament"], correct: 1 },
+    { question: "Who is the current President of the European Commission?", options: ["Ursula von der Leyen", "Charles Michel", "Mario Draghi", "Josep Borrell"], correct: 0 },
+    { question: "The first artificial satellite launched by India was:", options: ["Aryabhata", "INSAT-1A", "Rohini", "Kalpana-1"], correct: 0 },
+    { question: "Which Indian city is home to the National Defence Academy?", options: ["Pune", "Dehradun", "Bengaluru", "Hyderabad"], correct: 0 },
+    { question: "Which element has the highest melting point?", options: ["Tungsten", "Carbon", "Osmium", "Platinum"], correct: 0 },
+    { question: "The term “Green GDP” refers to:", options: ["GDP minus environmental costs", "GDP from agriculture", "GDP growth due to eco-tourism", "GDP from renewable energy"], correct: 0 },
+    { question: "The “Lisbon Treaty” came into force in:", options: ["2009", "2005", "2012", "2007"], correct: 0 },
+    { question: "Which country’s parliament is called the “Knesset”?", options: ["Israel", "Jordan", "Turkey", "Iran"], correct: 0 },
+    { question: "The \"Parker Solar Probe\" was launched to study:", options: ["The Sun’s corona", "Jupiter’s atmosphere", "The asteroid belt", "Black holes"], correct: 0 },
+    { question: "Who wrote the book Sapiens: A Brief History of Humankind?", options: ["Yuval Noah Harari", "Jared Diamond", "Stephen Hawking", "Malcolm Gladwell"], correct: 0 },
+    { question: "Which Indian personality won the Ramon Magsaysay Award in 2024?", options: ["Anshu Gupta", "Sonam Wangchuk", "Kailash Satyarthi", "Medha Patkar"], correct: 1 },
+    { question: "The “Vienna Convention” deals with:", options: ["Ozone layer protection", "Maritime boundaries", "Refugee rights", "Human trafficking"], correct: 0 }
+]
+
             }
         ];
 
@@ -2059,7 +2072,7 @@ function playWarningSound() {
         console.log('Click "START EXAMINATION" to begin');
     </script>
 </body>
-    <footer style="background: #1f2937; color: white; padding: 20px 10px; text-align: center; font-family: 'Segoe UI', sans-serif; font-size: 14px;">
+<footer style="background: #1f2937; color: white; padding: 20px 10px; text-align: center; font-family: 'Segoe UI', sans-serif; font-size: 14px;">
   <div style="margin-bottom: 5px;">
     Developed by <strong>Shaik Lalu Basha</strong> | 📞 <a href="tel:+91 7993417685" style="color: #60a5fa; text-decoration: none;">+91 7993417685</a>
   </div>
@@ -2067,6 +2080,4 @@ function playWarningSound() {
     🔋 Powered by <strong style="color: #34d399;">ESCORT TECH HUB</strong>
   </div>
 </footer>
-
 </html>
-
