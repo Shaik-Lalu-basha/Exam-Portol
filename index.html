@@ -1269,7 +1269,7 @@
             <div class="violation-reason" id="violationReason" style="display: none;"></div>
             <button class="close-btn" onclick="closeScoreCard()">Close</button>
             <button class="round2-btn" id="round2Btn" onclick="proceedToRound2()" style="display: none;">
-                🚀 Succesfully Completed your Quiz
+                🚀 Proceed to Round 2
             </button>
         </div>
     </div>
@@ -1303,10 +1303,11 @@
     { question: "The difference between compound interest and simple interest on ₹5000 at 10% p.a. for 2 years is:", options: ["₹50", "₹100", "₹150", "₹200"], correct: 0 },
     
 
-    { question: "If 15 men can complete a work in 20 days, how many men are required to complete it in 10 days?", options: ["20", "25", "30", "35"], correct: 2 },
+    { question: "If 15 men can complete a work in 20 days, how many men are required to complete it in 10 days?", options: ["20", "30", "25", "35"], correct: 1 },
+    { question: "If a person walks at 5 km/h, he is late by 15 minutes, but if he walks at 6 km/h, he is early by 15 minutes. The distance to be covered is:", options: ["5 km", "6 km", "7.5 km", "8 km"], correct: 2 },
     { question: "A sum amounts to ₹672 in 3 years and ₹792 in 5 years at simple interest. The principal is:", options: ["₹500", "₹540", "₹600", "₹650"], correct: 1 },
     { question: "The compound interest on ₹4000 at 5% p.a. for 3 years is:", options: ["₹600", "₹615.25", "₹630.50", "₹650"], correct: 1 },
-    { question: "If a person walks at 5 km/h, he is late by 15 minutes, but if he walks at 6 km/h, he is early by 15 minutes. The distance to be covered is:", options: ["5 km", "6 km", "7.5 km", "8 km"], correct: 2 },
+    
     { question: "The value of (256)^(3/4) is:", options: ["64", "32", "16", "8"], correct: 1 },
     { question: "A shopkeeper gains 25% after giving a discount of 20% on the marked price. The marked price is ₹600. The cost price is:", options: ["₹400", "₹450", "₹480", "₹500"], correct: 3 },
     { question: "The average weight of 40 students is 50 kg. If one student weighing 60 kg is replaced by another weighing 45 kg, the new average is:", options: ["49.5 kg", "49.75 kg", "50 kg", "50.25 kg"], correct: 0 },
@@ -1336,7 +1337,7 @@
     
     
     
-    { question: "Four suspects A,B,C,D; A says B did it. B says C did it. C says D did it. D says B lying. Exactly one tells truth. Who did it?", options: ["A", "B", "C", "D"], correct: 2 },
+    { question: "Four suspects A,B,C,D; A says B did it. B says C did it. C says D did it. D says B lying. Exactly one tells truth. Who did it?", options: ["D", "C", "B", "A"], correct: 1 },
     { question: "Five books on shelf: Math, Physics, Chem, Eng, Bio. Math left of Physics; Chem not at ends; Eng rightmost. Which is 3rd?", options: ["Math", "Physics", "Chem", "Bio"], correct: 2 },
     { question: "1, 2, 6, 24, 120, ?", options: ["720", "600", "7200", "1440"], correct: 0 },
     { question: "A farmer needs to transport wolf, goat, cabbage. If he takes goat first, then returns alone, then takes wolf, brings goat back, takes cabbage, returns alone, then takes goat — will he succeed?", options: ["Yes", "No", "Sometimes", "Depends on order"], correct: 0 },
@@ -1948,7 +1949,7 @@ function playWarningSound() {
         function proceedToRound2() {
             alert('🎉 Congratulations! You have qualified for Round 2. You will be redirected to the next level.');
             // Add your Round 2 logic here
-            window.location.href = '';
+            window.location.href = 'https://shaik-lalu-basha.github.io/Tech-Spark/';
         }
 
         function closeScoreCard() {
@@ -2081,4 +2082,3 @@ function playWarningSound() {
   </div>
 </footer>
 </html>
-
